@@ -3,27 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>O que eu fiz de errado?</title>
+    <title>Interação</title>
     <link rel="stylesheet" href="Assets/style.css">
 </head>
 <body>
     <div class="container">
-        <h1 id="question">O que eu fiz de errado?</h1>
-        <div class="options" id="options">
-            <button onclick="showMessage()">Você faz tudo de errado!</button>
-            <button onclick="showMessage()">Nasceu!</button>
+        <div id="step1">
+            <img src="Assets/primeira.jpg" alt="Imagem Inicial" class="image">
+            <h1>Oi, você me odeia?</h1>
+            <div class="options">
+                <button onclick="nextStep(2)">Sim!</button>
+                <button onclick="nextStep(2)">Claro!</button>
+            </div>
         </div>
-        <div class="message" id="message">
-            <p>Desculpa, desculpa, desculpa, desculpa, desculpa, desculpa, desculpa, desculpa, desculpa, desculpa.</p>
-            <p>Sorry, Sorry, Sorry, Sorry, Sorry, Sorry, Sorry, Sorry, Sorry, Sorry.</p>
-            <p>Pardon, Pardon, Pardon, Pardon, Pardon, Pardon, Pardon, Pardon, Pardon, Pardon.</p>
-            <p>Entschuldigung, Entschuldigung, Entschuldigung, Entschuldigung, Entschuldigung, Entschuldigung, Entschuldigung, Entschuldigung, Entschuldigung, Entschuldigung.</p>
-            <p>Извините, Извините, Извините, Извините, Извините, Извините, Извините, Извините, Извините, Извините.</p>
-            <p>對不起, 對不起, 對不起, 對不起, 對不起, 對不起, 對不起, 對不起, 對不起, 對不起.</p>
-            <p>미안합니다, 미안합니다, 미안합니다, 미안합니다, 미안합니다, 미안합니다, 미안합니다, 미안합니다, 미안합니다, 미안합니다.</p>
-            <p>죄송합니다, 죄송합니다, 죄송합니다, 죄송합니다, 죄송합니다, 죄송합니다, 죄송합니다, 죄송합니다, 죄송합니다, 죄송합니다.</p>
-            <p>Lo siento, Lo siento, Lo siento, Lo siento, Lo siento, Lo siento, Lo siento, Lo siento, Lo siento, Lo siento.</p>
-            <audio id="cryingAudio" src="crying_baby.mp3" loop></audio>
+        <div id="step2" class="hidden">
+            <img src="Assets/segunda.jpg" alt="Imagem Inicial" class="image">
+            <h1>O que eu fiz de errado?</h1>
+            <div class="options">
+                <button onclick="showMessage()">Tudo que você faz tá errado!</button>
+                <button onclick="showMessage()">Você nasceu!</button>
+            </div>
+        </div>
+        <div id="step3" class="hidden">
+            <img src="Assets/terceira.jpg" alt="Imagem de Desculpas" class="image">
+            <div id="message">
+                <p>Desculpa, desculpa, desculpa, desculpa, desculpa, desculpa, desculpa, desculpa, desculpa, desculpa.</p>
+                <p>Sorry, Sorry, Sorry, Sorry, Sorry, Sorry, Sorry, Sorry, Sorry, Sorry.</p>
+                <p>Pardon, Pardon, Pardon, Pardon, Pardon, Pardon, Pardon, Pardon, Pardon, Pardon.</p>
+                <p>Entschuldigung, Entschuldigung, Entschuldigung, Entschuldigung, Entschuldigung, Entschuldigung, Entschuldigung, Entschuldigung, Entschuldigung, Entschuldigung.</p>
+                <p>Извините, Извините, Извините, Извините, Извините, Извините, Извините, Извините, Извините, Извините.</p>
+                <p>對不起, 對不起, 對不起, 對不起, 對不起, 對不起, 對不起, 對不起, 對不起, 對不起.</p>
+                <p>미안합니다, 미안합니다, 미안합니다, 미안합니다, 미안합니다, 미안합니다, 미안합니다, 미안합니다, 미안합니다, 미안합니다.</p>
+                <p>죄송합니다, 죄송합니다, 죄송합니다, 죄송합니다, 죄송합니다, 죄송합니다, 죄송합니다, 죄송합니다, 죄송합니다, 죄송합니다.</p>
+                <p>Lo siento, Lo siento, Lo siento, Lo siento, Lo siento, Lo siento, Lo siento, Lo siento, Lo siento, Lo siento.</p>
+                <audio id="cryingAudio" src="crying_baby.mp3" loop></audio>
+            </div>
         </div>
     </div>
 
